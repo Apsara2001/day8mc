@@ -5,7 +5,8 @@ import {BrowserRouter as Router,Routes,Route,Link,NavLink} from 'react-router-do
 import Home from './components/Home'
 import AboutUs from './components/AboutUs'
 import ContactUs from './components/ContactUs'
-
+import Login from './componets/Login'
+import Dashboard from './componets/Dashboard'
 function App() {
   return (
     <div className="App">
@@ -23,6 +24,8 @@ function App() {
           <Route path='/about' element={<AboutUs/>}/>
           <Route path='/contact' element={<ContactUs/>}/>
         
+          <Route path='/' element={<Login/>}/>
+          <Route path='/dash' element={<Dashboard/>}/>
       </Routes>
      </Router>
     </div>
